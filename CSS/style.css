@@ -1,15 +1,19 @@
-.debug > [class*="col-"]{
+.debug{
   background-color: lightcoral;
   text-align: center;
-  height: 250px;
-  line-height: 250px;
+  line-height: 200px;
+}
+
+[class*=col-] {
   border: 1px solid black;
 }
 
-.container > .col-6 [class*="col-"]{
-  background-color: rgb(240, 98, 98);
-  text-align: center;
-  height: 90%;
-  border: 1px solid black;
+.debug .col-6 [class*="col-"]{
+  background-color: #dd5c5c;
+  border: 1px solid white;
+  line-height: 180px;
 }
 
+ .debug:nth-of-type(5)>.col-6{
+  padding: 5px;
+}
