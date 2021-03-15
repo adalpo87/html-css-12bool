@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container::after{ /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* SELETTORE AVANZATO --> tutte le classi
+che iniziano con "col-" hanno float left */
+
+[class*="col-"]{
+  float: left;
+}
+
+/* FRAMEWORK 12 COLONNE */
+
+.col-1{
+  width: calc(100% / 12);  /* 1 colonna su 12 */
+}
+
+.col-2{
+  width: calc(100% / 6);
+}
+
+.col-3{
+  width: calc(100% / 4);
+}
+
+.col-4{
+  width: calc(100% / 3);
+}
+
+.col-5{
+  width: calc((100%/ 12) *5);  /*  5 colonne su 12 */
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-7{
+  width: calc((100%/ 12) *7);
+}
+
+.col-8{
+  width: calc((100%/ 12) *8);
+}
+
+.col-9{
+  width: calc((100%/ 12) *9);
+}
+
+.col-10{
+  width: calc((100%/ 12) *10);
+}
+
+.col-11{
+  width: calc((100% /12) * 11);
+}
+
+.col-12{
+  width: 100%; /*  12 colonne su 12, quindi tutto lo spazio */
+}
+
+
+

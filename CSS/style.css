@@ -1,0 +1,15 @@
+.debug > [class*="col-"]{
+  background-color: lightcoral;
+  text-align: center;
+  height: 250px;
+  line-height: 250px;
+  border: 1px solid black;
+}
+
+.container > .col-6 [class*="col-"]{
+  background-color: rgb(240, 98, 98);
+  text-align: center;
+  height: 90%;
+  border: 1px solid black;
+}
+
